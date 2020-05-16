@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="groupWorkFinal.StudentController">
+  <children>
+    <ListView fx:id="lvGroupList" layoutX="21.0" layoutY="114.0" prefHeight="200.0" prefWidth="200.0" />
+    <ListView fx:id="lvGroupMemberList" layoutX="365.0" layoutY="114.0" prefHeight="200.0" prefWidth="200.0" />
+    <Label layoutX="22.0" layoutY="92.0" text="Groups" />
+    <Label layoutX="365.0" layoutY="92.0" text="Group Members:" />
+    <Button layoutX="121.0" layoutY="327.0" mnemonicParsing="false" onAction="#onClickEnrollInGroup" text="Join Group" />
+    <Button layoutX="523.0" layoutY="14.0" mnemonicParsing="false" onAction="#onClickBtnSignOut" text="Sign Out" />
+    <ComboBox fx:id="cboCourseList" layoutX="225.0" layoutY="48.0" onAction="#onClickCourseDropdown" prefWidth="150.0" />
+    <ComboBox fx:id="cboAssignmentList" layoutX="416.0" layoutY="48.0" onAction="#onClickAssignmentDropdown" prefWidth="150.0" />
+    <ComboBox fx:id="cboSectionList" layoutX="22.0" layoutY="48.0" onAction="#onClickSemesterDropdown" prefWidth="150.0" />
+    <Label fx:id="lblErrorLabel" alignment="CENTER" layoutX="187.0" layoutY="361.0" prefHeight="17.0" prefWidth="206.0" />
+    <Button layoutX="22.0" layoutY="327.0" mnemonicParsing="false" onAction="#onClickNewGrouo" text="New Group" />
+    <Button layoutX="375.0" layoutY="327.0" mnemonicParsing="false" onAction="#onClickViewBreakdown" text="View Details" />
+    <Button layoutX="480.0" layoutY="327.0" mnemonicParsing="false" onAction="#onClickWriteReview" text="Review Student" />
+      <Button layoutX="6.0" layoutY="7.0" mnemonicParsing="false" onAction="#onClickBtnEnroll" text="Enroll in Courses" />
+  </children>
+</AnchorPane>

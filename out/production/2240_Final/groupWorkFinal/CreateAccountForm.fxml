@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="550.0" minWidth="450.0" prefHeight="550.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="groupWorkFinal.AccountCreator">
+   <children>
+      <VBox layoutX="25.0" minHeight="500.0" minWidth="400.0" prefHeight="500.0" prefWidth="400.0">
+         <children>
+            <Label text="Create New Account Form">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Instructor/Student Account form">
+               <font>
+                  <Font name="Arial Italic" size="13.0" />
+               </font>
+            </Label>
+            <Separator prefWidth="350.0">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Separator>
+            <HBox alignment="CENTER" prefHeight="45.0" prefWidth="350.0">
+               <children>
+                  <RadioButton fx:id="rbInstructor" contentDisplay="CENTER" mnemonicParsing="false" text="Instructor">
+                     <HBox.margin>
+                        <Insets right="30.0" />
+                     </HBox.margin>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="accountType" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="rbStudent" contentDisplay="CENTER" mnemonicParsing="false" selected="true" text="Student" toggleGroup="$accountType">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </RadioButton>
+               </children>
+               <VBox.margin>
+                  <Insets right="5.0" />
+               </VBox.margin>
+            </HBox>
+            <Separator prefWidth="350.0" />
+            <HBox layoutX="10.0" layoutY="128.0" prefHeight="30.0" prefWidth="350.0">
+               <children>
+                  <Label fx:id="lbUsername" alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="130.0" text="Email / Username">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtUsername" prefHeight="30.0" prefWidth="200.0" promptText="Username" />
+               </children>
+               <VBox.margin>
+                  <Insets right="5.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="350.0">
+               <children>
+                  <Label fx:id="lbName" alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="130.0" text="Name">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtName" prefHeight="30.0" prefWidth="200.0" promptText="First Last" />
+               </children>
+               <VBox.margin>
+                  <Insets right="5.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="158.0" prefHeight="30.0" prefWidth="350.0">
+               <children>
+                  <Label fx:id="lbAddress" alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="130.0" text="Address">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </Label>
+                  <VBox prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="txtStreetAddress" prefHeight="30.0" prefWidth="200.0" promptText="123 Spooner Street" />
+                        <Label text="Street Address">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets right="5.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="218.0" prefHeight="30.0" prefWidth="350.0">
+               <children>
+                  <VBox prefHeight="30.0" prefWidth="150.0">
+                     <children>
+                        <TextField fx:id="txtCity" prefHeight="30.0" prefWidth="150.0" promptText="Peterborough" />
+                        <Label prefHeight="30.0" prefWidth="150.0" text="City">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="150.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox prefHeight="30.0" prefWidth="125.0">
+                     <children>
+                        <TextField fx:id="txtProvince" prefHeight="30.0" prefWidth="300.0" promptText="Ontario" />
+                        <Label text="Province">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets right="5.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="248.0" prefHeight="30.0" prefWidth="350.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <TextField fx:id="txtPostalCode" prefHeight="30.0" prefWidth="300.0" promptText="A1A 1A1" />
+                        <Label fx:id="lbPostalCode" text="Postal Code">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="150.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets right="5.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Separator>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="lbPassword" alignment="CENTER_RIGHT" prefWidth="130.0" text="Password">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin></Label>
+                  <VBox prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <PasswordField fx:id="txtPassword" />
+                        <PasswordField fx:id="txtConfirmPassword">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </PasswordField>
+                        <Label fx:id="lbConfirmPassword" text="Confirm Password">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutY="475.0" prefHeight="50.0" prefWidth="450.0">
+         <children>
+            <HBox prefHeight="50.0" prefWidth="450.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onClickBtnSubmit" text="Submit">
+                     <HBox.margin>
+                        <Insets left="150.0" right="25.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button alignment="TOP_CENTER" mnemonicParsing="false" onAction="#onClickBtnCancel" text="Cancel" />
+               </children>
+            </HBox>
+            <Label fx:id="lbErrorMsg" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="450.0" text="Error Message" textAlignment="CENTER" textFill="RED" visible="false">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

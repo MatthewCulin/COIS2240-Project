@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="groupWorkFinal.ReviewController">
+  <children>
+    <TextField fx:id="tfReviewBox" layoutX="226.0" layoutY="124.0" prefHeight="25.0" prefWidth="179.0" />
+    <Label fx:id="lblStars" layoutX="42.0" layoutY="129.0" text="Number of Stars (OUT OF 5)" textAlignment="RIGHT" />
+    <Label fx:id="lblReview" layoutX="150.0" layoutY="192.0" text="Comments" />
+    <TextField layoutX="226.0" layoutY="188.0" prefHeight="127.0" prefWidth="149.0" />
+    <TextArea fx:id="taCommentBox" layoutX="226.0" layoutY="188.0" prefHeight="149.0" prefWidth="179.0" />
+    <Label layoutX="246.0" layoutY="45.0" text="REVIEW SUBMITTION FOR" />
+    <Label fx:id="lblPartnerName" layoutX="260.0" layoutY="68.0" prefHeight="17.0" prefWidth="111.0" />
+    <Label fx:id="lblErrorMsg" alignment="CENTER" layoutX="136.0" layoutY="159.0" prefHeight="17.0" prefWidth="360.0" text="Error: Message goes here" textFill="RED" visible="false" />
+    <Button layoutX="226.0" layoutY="353.0" mnemonicParsing="false" onAction="#onClickBtnSubmitReview" text="Submit" />
+      <Button layoutX="346.0" layoutY="353.0" mnemonicParsing="false" onAction="#onClickBtnCancel" text="Cancel" />
+  </children>
+</AnchorPane>
